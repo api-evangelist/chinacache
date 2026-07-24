@@ -1,7 +1,18 @@
 aid: chinacache
-name: chinacache
-description: chinacache is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: ChinaCache (EdgeNext)
+description: >-
+  ChinaCache International Holdings was one of China's earliest and largest
+  content delivery network (CDN) operators, founded in 1998 and formerly listed
+  on NASDAQ. Its international CDN, edge computing, and cloud security business
+  now operates under the EdgeNext brand at edgenext.com, delivering content
+  acceleration, DDoS/WAF security, and edge compute across a network of 1500+
+  global points of presence and 90+ Tbps of capacity, with a strong footprint
+  in China and other emerging markets. The company runs a customer console at
+  home.console.edgenext.com with OpenID Connect (Keycloak) single sign-on and a
+  REST API host at api.edgenext.com, documented in its online Document Center,
+  for managing CDN domains, cache purge/prefetch, security policies, and edge
+  configuration. The original chinacache.com domain now resolves to the EdgeNext
+  web properties.
 url: https://raw.githubusercontent.com/api-evangelist/chinacache/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +20,80 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://docs.edgenext.com/doc/logo192.png
 tags:
 - Company
-apis: []
+- CDN
+- Content Delivery Network
+- Edge Computing
+- Cloud Security
+- DDoS Protection
+- WAF
+- Media Delivery
+- Networking
+- China
+apis:
+- name: EdgeNext CDN API
+  description: >-
+    REST API for the ChinaCache/EdgeNext CDN and edge platform — manage CDN
+    domains, cache purge and prefetch, security (DDoS/WAF) policies, and edge
+    configuration. Documented in the EdgeNext Document Center; requires a console
+    account. No public OpenAPI specification is currently published.
+  humanURL: https://docs.edgenext.com/
+  baseURL: https://api.edgenext.com
+  tags:
+  - CDN
+  - Edge Computing
+  - Cloud Security
+  properties:
+  - type: Documentation
+    url: https://docs.edgenext.com/
+  - type: DeveloperPortal
+    url: https://home.console.edgenext.com/#/doc/dashboard
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/chinacache-domain-security.yml
 - type: Website
-  url: https://chinacache.com
+  url: https://www.edgenext.com
+- type: DeveloperPortal
+  url: https://home.console.edgenext.com/#/doc/dashboard
+- type: Documentation
+  url: https://docs.edgenext.com/
+- type: SignUp
+  url: https://home.console.edgenext.com/#/uc/register
+- type: Login
+  url: https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth
+- type: Blog
+  url: https://www.edgenext.com/blog
+- type: Support
+  url: https://www.edgenext.com/contact-us
+- type: TermsOfService
+  url: https://www.edgenext.com/legal
+- type: PrivacyPolicy
+  url: https://www.edgenext.com/legal
+- type: StatusPage
+  url: https://www.edgenext.com/network
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
